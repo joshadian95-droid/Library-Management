@@ -12,13 +12,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableEnd="@drawable/arrow_back"
+            android:drawableTint="@color/black"
+            android:backgroundTint="@android:color/transparent"/>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/book"
                 android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="140dp"
                 android:clickable="true"
                 app:strokeColor="@color/black"
                 app:strokeWidth="1dp">
