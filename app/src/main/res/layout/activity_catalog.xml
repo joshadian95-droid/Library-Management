@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Catalog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <ScrollView
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cttextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Computer &amp; Technology" />
+
+                <Button
+                    android:id="@+id/adpBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Android Programming Basics" />
+
+                <Button
+                    android:id="@+id/idBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Introduction to Databases" />
+
+                <Button
+                    android:id="@+id/jpfBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Java Programming Fundamentals" />
+
+                <Button
+                    android:id="@+id/wdeBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Web Development Essentials" />
+
+                <TextView
+                    android:id="@+id/mathtextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Mathematics" />
+
+                <Button
+                    android:id="@+id/caBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="College Algebra" />
+
+                <Button
+                    android:id="@+id/dmBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Discrete Mathematics" />
+
+                <Button
+                    android:id="@+id/fsBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Fundamentals of Statistics" />
+
+                <Button
+                    android:id="@+id/icBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Introduction to Calculus" />
+
+                <TextView
+                    android:id="@+id/scitextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Science" />
+
+                <Button
+                    android:id="@+id/bpBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Basic Physics" />
+
+                <Button
+                    android:id="@+id/esBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Environmental Science" />
+
+                <Button
+                    android:id="@+id/gbBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="General Biology" />
+
+                <Button
+                    android:id="@+id/gcBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="General Chemistry" />
+
+                <TextView
+                    android:id="@+id/littextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Literature" />
+
+                <Button
+                    android:id="@+id/ipBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Introduction to Philippine Literature" />
+
+                <Button
+                    android:id="@+id/pssBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Philippine Short Stories" />
+
+                <Button
+                    android:id="@+id/wlBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="World Literature" />
+
+                <Button
+                    android:id="@+id/walBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Writing and Literature" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
