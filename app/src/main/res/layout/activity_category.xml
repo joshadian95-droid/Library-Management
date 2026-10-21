@@ -24,7 +24,7 @@
             app:strokeWidth="1dp">
 
             <TextView
-                android:id="@+id/title3"
+                android:id="@+id/label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -34,13 +34,28 @@
                 android:text="Computer &amp; Technology" />
         </com.google.android.material.card.MaterialCardView>
 
-        <Button
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/mathBtn"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_marginLeft="90dp"
-            android:text="Mathematics" />
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Mathematics" />
+        </com.google.android.material.card.MaterialCardView>
+
+
 
         <Button
             android:id="@+id/sciBtn"
