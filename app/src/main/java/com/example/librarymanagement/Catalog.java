@@ -1,6 +1,9 @@
 package com.example.librarymanagement;
 
+import static android.view.View.VISIBLE;
+
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -51,6 +54,14 @@ public class Catalog extends AppCompatActivity {
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,list);
         listView.setAdapter(adapter);
 
+        searchView.setOnSearchClickListener(v -> { //changing the visibility of ListView into Visible
+            listView.setVisibility(View.VISIBLE);
+        });
+
+        searchView.setOnCloseListener(() -> { //changing the visibility of ListView into gone when user click the x button
+            listView.setVisibility(View.GONE);
+            return false;
+        });
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextChange(String s) {

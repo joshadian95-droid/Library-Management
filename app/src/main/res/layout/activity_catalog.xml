@@ -19,15 +19,15 @@
             android:layout_height="37dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:queryHint="Search"
-            android:iconifiedByDefault="false">
+            android:queryHint="Search">
         </SearchView>
 
         <ListView
             android:id="@+id/list_item"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
 
         <ScrollView
             android:layout_width="410dp"
