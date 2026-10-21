@@ -21,14 +21,20 @@ public class Menu extends AppCompatActivity {
 
         Button catalogBtn = findViewById(R.id.catalogBtn);
         Button cateBtn = findViewById(R.id.categoryBtn);
-
-        cateBtn.setOnClickListener( v -> {
-            Intent intent = new Intent(Menu.this, Category.class);
-            startActivity(intent);
-        });
+        Button backBtn = findViewById(R.id.backBtn);
 
         catalogBtn.setOnClickListener( v -> {
             Intent intent = new Intent(Menu.this, Catalog.class);
+            startActivity(intent);
+        });
+
+        backBtn.setOnClickListener( v -> {
+            Intent intent = new Intent(Menu.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        cateBtn.setOnClickListener( v -> {
+            Intent intent = new Intent(this, Category.class);
             startActivity(intent);
         });
 

@@ -17,10 +17,11 @@
 
         <Button
             android:id="@+id/backBtn"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
+            android:text="backbutton"
             android:background="@drawable/arrow_back"/>
 
         <com.google.android.material.card.MaterialCardView
@@ -31,7 +32,7 @@
             android:layout_marginRight="40dp"
             android:layout_marginTop="70dp"
             android:backgroundTint="@color/white"
-            android:clickable="true"
+            android:clickable="false"
             app:strokeColor="@color/black"
             app:strokeWidth="1dp"
             app:cardCornerRadius="15dp">

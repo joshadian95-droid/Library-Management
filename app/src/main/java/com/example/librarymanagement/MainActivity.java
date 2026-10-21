@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-
-
         Button nextPg = findViewById(R.id.enterBtn);
 
         nextPg.setOnClickListener( v -> {

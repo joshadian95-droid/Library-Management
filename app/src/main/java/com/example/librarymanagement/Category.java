@@ -2,15 +2,15 @@ package com.example.librarymanagement;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import com.google.android.material.card.MaterialCardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-import com.google.android.material.card.MaterialCardView;
 
 public class Category extends AppCompatActivity {
 
@@ -31,7 +31,8 @@ public class Category extends AppCompatActivity {
             return insets;
         });
     }
-    private void bookCategory (Button button, String book, String book1, String book2, String book3) {
+
+    private void bookCategory (View button, String book, String book1, String book2, String book3) { //View Button fixed the of Button button in xml and the keep crashing shit. Using View instead of MaterialViewCard is much better.
         button.setOnClickListener( v -> {
             Intent intent = new Intent(Category.this, bookCatalogs.class);
             intent.putExtra("book", book);
@@ -40,6 +41,5 @@ public class Category extends AppCompatActivity {
             intent.putExtra("book3", book3);
             startActivity(intent);
         });
-
     }
 }
