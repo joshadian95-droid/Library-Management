@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorrowingSummary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:fontFamily="@font/anaheim"
+                android:textStyle="bold"
+                android:text="Borrowing Successful!" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/anaheim"
+                android:textStyle="bold"
+                android:text="-----------------------------------------------" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/anaheim"
+                android:textStyle="italic"
+                android:text="Borrower Information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Name:" />
+
+                <TextView
+                    android:id="@+id/summaryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="summaryName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Student No.:" />
+
+                <TextView
+                    android:id="@+id/summaryStudentNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="summaryStudentNo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Contact No.:" />
+
+                <TextView
+                    android:id="@+id/summaryContactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="summaryContactNo" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/anaheim"
+                android:textStyle="bold"
+                android:text="-----------------------------------------------" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/anaheim"
+                android:textStyle="italic"
+                android:text="Borrowing Details" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Title:" />
+
+                <TextView
+                    android:id="@+id/summaryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="summaryTitle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Author:" />
+
+                <TextView
+                    android:id="@+id/summaryAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="summaryAuthor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Category:" />
+
+                <TextView
+                    android:id="@+id/summaryCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="summaryCategory" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Borrowed Date:" />
+
+                <TextView
+                    android:id="@+id/summaryBorrowedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="sumaryBorrowed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Return Date:" />
+
+                <TextView
+                    android:id="@+id/summaryReturn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="summaryReturn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/summaryStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/anaheim"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="summaryStatus" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Return to Catalog"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

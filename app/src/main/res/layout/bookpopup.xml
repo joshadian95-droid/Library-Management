@@ -62,6 +62,16 @@
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
+                <TextView
+                    android:id="@+id/AvailabilitySet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Available or Unavailable"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
             </LinearLayout>
         </LinearLayout>
 
