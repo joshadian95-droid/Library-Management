@@ -124,7 +124,9 @@
             android:textSize="20dp"
             android:text="Selected Book" />
 
-        <LinearLayout
+
+
+            <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -171,6 +173,19 @@
                     android:layout_height="wrap_content" />
             </LinearLayout>
         </LinearLayout>
+
+            <Button
+                android:id="@+id/confirmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Confirm"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp"
+                app:strokeColor="#000000"
+                app:strokeWidth="1dp" />
         </LinearLayout>
     </ScrollView>
 
