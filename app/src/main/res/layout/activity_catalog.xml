@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#fffdf0"
     tools:context=".Catalog">
 
     <LinearLayout
@@ -44,7 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:text="Computer &amp; Technology" />
 
                 <Button
@@ -53,6 +53,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Android Programming Basics" />
 
                 <Button
@@ -61,6 +66,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Introduction to Databases" />
 
                 <Button
@@ -69,6 +79,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Java Programming Fundamentals" />
 
                 <Button
@@ -77,6 +92,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Web Development Essentials" />
 
                 <TextView
@@ -93,6 +113,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="College Algebra" />
 
                 <Button
@@ -101,6 +126,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Discrete Mathematics" />
 
                 <Button
@@ -109,6 +139,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Fundamentals of Statistics" />
 
                 <Button
@@ -117,6 +152,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Introduction to Calculus" />
 
                 <TextView
@@ -133,6 +173,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Basic Physics" />
 
                 <Button
@@ -141,6 +186,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Environmental Science" />
 
                 <Button
@@ -149,6 +199,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="General Biology" />
 
                 <Button
@@ -157,6 +212,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="General Chemistry" />
 
                 <TextView
@@ -165,6 +225,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="40dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Literature" />
 
                 <Button
@@ -173,6 +238,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Introduction to Philippine Literature" />
 
                 <Button
@@ -181,6 +251,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Philippine Short Stories" />
 
                 <Button
@@ -189,6 +264,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="World Literature" />
 
                 <Button
@@ -197,6 +277,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="#181A1F"
+                    android:backgroundTint="#fff9c4"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp"
                     android:text="Writing and Literature" />
             </LinearLayout>
         </ScrollView>

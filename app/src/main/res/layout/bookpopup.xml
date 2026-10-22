@@ -10,7 +10,8 @@
         android:id="@+id/bookpopup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:strokeColor="@color/black"
+        android:textColor="#181A1F"
+        android:backgroundTint="#fff9c4"
         app:strokeWidth="1dp">
 
         <LinearLayout
