@@ -10,7 +10,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.librarymanagement.model.LibraryModel;
+
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button nextPg = findViewById(R.id.enterBtn);
+        //libraryRepository = new LibraryRepository(this);
+        //libraryRepository.insertLibrary(new LibraryModel("Name",123,123,"Name",12,23));
 
         nextPg.setOnClickListener( v -> {
             Intent intent = new Intent(this,Menu.class);

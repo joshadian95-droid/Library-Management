@@ -11,11 +11,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.librarymanagement.model.BookInfo;
+
 public class Form extends AppCompatActivity {
 
     TextView selectedItemTextView;
     EditText nameEditText, studentNum, contactNum, borrowingDate;
-
+    BookInfo bookInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +28,21 @@ public class Form extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        String selectedItem = getIntent().getStringExtra("selectedItem");
+
+
+
+        if (android.os.Build.VERSION.SDK_INT >= 33) {
+            bookInfo = getIntent().getSerializableExtra(
+                    "BOOK_INFO", BookInfo.class);
+        } else {
+            bookInfo = (BookInfo) getIntent()
+                    .getSerializableExtra("BOOK_INFO");
+        }
         nameEditText = findViewById(R.id.inputName);
         studentNum = findViewById(R.id.inputStudentNo);
         contactNum = findViewById(R.id.inputContactNo);
         borrowingDate = findViewById(R.id.inputborrowDate);
         selectedItemTextView = findViewById(R.id.selectedBook);
-        selectedItemTextView.setText(selectedItem);
+        selectedItemTextView.setText(bookInfo.getTitle());
     }
 }

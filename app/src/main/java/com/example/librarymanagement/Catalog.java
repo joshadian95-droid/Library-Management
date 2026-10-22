@@ -17,38 +17,29 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.librarymanagement.model.BookInfo;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class Catalog extends AppCompatActivity {
 
     SearchView searchView;
     ListView listView;
-
+    List<BookInfo> bookInfoList = new ArrayList<>();
+    LibraryRepository libraryRepository;
     //ArrayList<String> list;
     ArrayAdapter<String> adapter;
-    private final String[] list = {
-            "Android Programming Basics",
-            "Introduction to Databases",
-            "Java Programming Fundamentals",
-            "Web Development Essentials",
-            "College Algebra",
-            "Discrete Mathematics",
-            "Fundamentals of Statistics",
-            "Introduction to Calculus",
-            "Basic Physics",
-            "Environmental Science",
-            "General Biology",
-            "General Chemistry",
-            "Introduction to Philippine Literature",
-            "Philippine Short Stories",
-            "World Literature",
-            "Writing and Literature"
-    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_catalog);
+
+        libraryRepository = new LibraryRepository(this);
+        bookInfoList = libraryRepository.getBookInfo();
+
 
         //SearchView and ListView Methods.
         searchView = findViewById(R.id.categorySearch);
@@ -87,11 +78,14 @@ public class Catalog extends AppCompatActivity {
         });
     }
 
-    private void bookCat(Button butonton, String author, String title, String category){
-        butonton.setOnClickListener(v -> {
-});
+ //   private void bookCat(Button butonton, String author, String title, String category){
+   //     butonton.setOnClickListener(v -> {
+//});
     private void initListView(){
-
+        List<String> list = new ArrayList<>();
+        for (BookInfo bookInfo : bookInfoList) {
+            list.add(bookInfo.getTitle());
+        }
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
@@ -105,11 +99,25 @@ public class Catalog extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
-            String selectedItem = (String) listView.getItemAtPosition(position);
 
-            Intent intent = new Intent(Catalog.this, Form.class);
-            intent.putExtra("selectedItem", selectedItem);
-            startActivity(intent);
+            // Get the selected title
+            String selectedItem = list.get(position);
+
+            // Get the original BookInfo object using the position
+            BookInfo selectedBook = bookInfoList.get(position);
+
+            // Pass the selected BookInfo to BorrowDialog
+            BorrowDialog dialog = new BorrowDialog(
+                    Catalog.this,
+                    selectedBook,
+                    book -> {
+                        Intent intent = new Intent(Catalog.this, Form.class);
+                        intent.putExtra("BOOK_INFO", book);
+                        startActivity(intent);
+                    }
+            );
+
+            dialog.show();
         });
     }
 }
