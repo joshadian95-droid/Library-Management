@@ -1,5 +1,6 @@
 package com.example.librarymanagement;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -55,6 +56,13 @@ public class bookCatalogs extends AppCompatActivity {
             AlertDialog dialog = builder.create();
             bookCred(btnBook, author, title, "", category);
             dialog.show();
+
+            Button butonton = popUpView.findViewById(R.id.borrowBtn);
+            butonton.setOnClickListener(view -> {
+                Intent intent = new Intent(this, Form.class);
+                intent.putExtra("title", global.book);
+                startActivity(intent);
+            });
         });
 
         TextView text1 = findViewById(R.id.title1);
@@ -73,6 +81,13 @@ public class bookCatalogs extends AppCompatActivity {
             AlertDialog dialog = builder.create();
             bookCred(btnBook1, author1, title1, "", category);
             dialog.show();
+
+            Button butonton = popUpView.findViewById(R.id.borrowBtn);
+            butonton.setOnClickListener(view -> {
+                Intent intent = new Intent(this, Form.class);
+                intent.putExtra("title", global.book);
+                startActivity(intent);
+            });
         });
 
         TextView text2 = findViewById(R.id.title2);
@@ -91,6 +106,13 @@ public class bookCatalogs extends AppCompatActivity {
             AlertDialog dialog = builder.create();
             bookCred(btnBook2, author2, title2, "", category);
             dialog.show();
+
+            Button butonton = popUpView.findViewById(R.id.borrowBtn);
+            butonton.setOnClickListener(view -> {
+                Intent intent = new Intent(this, Form.class);
+                intent.putExtra("title", global.book);
+                startActivity(intent);
+            });
         });
 
         TextView text3 = findViewById(R.id.title3);
@@ -109,6 +131,13 @@ public class bookCatalogs extends AppCompatActivity {
             AlertDialog dialog = builder.create();
             bookCred(btnBook3, author3, title3, "", category);
             dialog.show();
+
+            Button butonton = popUpView.findViewById(R.id.borrowBtn);
+            butonton.setOnClickListener(view -> {
+                Intent intent = new Intent(this, Form.class);
+                intent.putExtra("title", global.book);
+                startActivity(intent);
+            });
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -123,5 +152,6 @@ public class bookCatalogs extends AppCompatActivity {
         global.author = Author;
         global.description = description;
         global.category = category;
+
     }
 }
