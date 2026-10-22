@@ -8,17 +8,11 @@
     android:background="#fffdf0"
     tools:context=".Form">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            android:orientation="vertical">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/BorrowForm"
@@ -40,6 +34,22 @@
             android:textSize="12sp"
             android:text="*Fill out the form with necessary details"
             />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
 
         <TextView
             android:id="@+id/Name"
@@ -170,7 +180,8 @@
                 <CalendarView
                     android:id="@+id/inputreturnDate"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
             </LinearLayout>
         </LinearLayout>
 
@@ -178,11 +189,12 @@
                 android:id="@+id/confirmBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="150dp"
                 android:layout_marginRight="150dp"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="#ede08e"
                 android:text="Confirm"
-                android:textColor="@color/black"
+                android:textColor="#A50D0C0C"
                 app:cornerRadius="10dp"
                 app:strokeColor="#000000"
                 app:strokeWidth="1dp" />
