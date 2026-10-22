@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#181A1F"
-        android:backgroundTint="#fff9c4"
+        android:backgroundTint="@color/white"
         app:strokeWidth="1dp"
         app:strokeColor="@color/black"
         app:cardElevation="5dp">
@@ -43,7 +43,8 @@
                     android:layout_marginTop="20dp"
                     android:hint="Title"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/AuthorSet"
@@ -57,13 +58,15 @@
 
                 <TextView
                     android:id="@+id/CategorySet"
+                    android:background="@drawable/categorydesign"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:hint="Category"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    />
 
                 <TextView
                     android:id="@+id/AvailabilitySet"
@@ -106,9 +109,8 @@
             android:backgroundTint="#ede08e"
             android:text="Borrow"
             android:textColor="#A50D0C0C"
-            app:cornerRadius="15dp"
-            app:strokeColor="@color/black"
-            app:strokeWidth="0.5dp" />
+            android:elevation="2dp"
+            app:cornerRadius="20dp" />
     </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>
