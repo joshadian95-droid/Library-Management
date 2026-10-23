@@ -19,19 +19,7 @@ public class LibraryRepository {
         db = dbHelper.getWritableDatabase();
     }
 
-    public boolean insertLibrary(LibraryModel library) {
 
-               ContentValues values = new ContentValues();
-               values.put(LibraryTable.COLUMN_NAME, library.getName());
-               values.put(LibraryTable.COLUMN_STUDENT_NUMBER, library.getStudentNum());
-               values.put(LibraryTable.COLUMN_CONTACT_NUMBER, library.getContactNum());
-               values.put(LibraryTable.COLUMN_SELECTED_BOOKS, library.getSelectedBooks());
-               values.put(LibraryTable.COLUMN_BORROWING_DATE, library.getBorrowingDate());
-               values.put(LibraryTable.COLUMN_RETURN_DATE, library.getReturnDate());
-
-               long newRowId = db.insert(LibraryTable.TABLE_NAME, null, values);
-               return newRowId != -1;
-    }
     public List<BookInfo> getBookInfo() {
 
         List<BookInfo> BookInfoList = new ArrayList<>();
