@@ -32,6 +32,7 @@
             android:clickable="true"
             android:textColor="#181A1F"
             android:backgroundTint="#fff9c4"
+
             app:strokeColor="@color/black"
             app:strokeWidth="1dp">
 
@@ -43,6 +44,8 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
+                android:drawableEnd="@drawable/computer"
+                app:drawableTint="@color/black"
                 android:text="Computer &amp; Technology" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -64,9 +67,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginRight="70dp"
-                android:text="Mathematics" />
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:drawableEnd="@drawable/math"
+                app:drawableTint="@color/black"
+                android:text="Mathematics                   " />
         </com.google.android.material.card.MaterialCardView>
 
 
@@ -88,9 +93,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:layout_marginLeft="90dp"
-                android:layout_marginRight="90dp"
-                android:text="Science" />
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:drawableEnd="@drawable/science"
+                app:drawableTint="@color/black"
+                android:text="Science                               " />
         </com.google.android.material.card.MaterialCardView>
 
 
@@ -112,9 +119,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:layout_marginLeft="85dp"
-                android:layout_marginRight="85dp"
-                android:text="Literature" />
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:drawableEnd="@drawable/literature"
+                app:drawableTint="@color/black"
+                android:text="Literature                            " />
         </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>

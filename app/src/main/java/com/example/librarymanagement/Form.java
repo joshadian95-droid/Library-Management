@@ -29,20 +29,42 @@ public class Form extends AppCompatActivity {
             return insets;
         });
 
-
-
-        if (android.os.Build.VERSION.SDK_INT >= 33) {
-            bookInfo = getIntent().getSerializableExtra(
-                    "BOOK_INFO", BookInfo.class);
-        } else {
-            bookInfo = (BookInfo) getIntent()
-                    .getSerializableExtra("BOOK_INFO");
-        }
         nameEditText = findViewById(R.id.inputName);
         studentNum = findViewById(R.id.inputStudentNo);
         contactNum = findViewById(R.id.inputContactNo);
         borrowingDate = findViewById(R.id.inputborrowDate);
         selectedItemTextView = findViewById(R.id.selectedBook);
-        selectedItemTextView.setText(bookInfo.getTitle());
+//        selectedItemTextView.setText(bookInfo.getTitle());
+
+        String title = getIntent().getStringExtra("title");
+
+//        if (android.os.Build.VERSION.SDK_INT >= 33) {
+//            bookInfo = getIntent().getSerializableExtra(
+//                    "BOOK_INFO", BookInfo.class);
+//        } else {
+//            bookInfo = (BookInfo) getIntent()
+//                    .getSerializableExtra("BOOK_INFO");
+//        }
+//
+//        if (bookInfo != null){
+//            selectedItemTextView.setText(bookInfo.getTitle());
+//        }
+//
+//        else {
+//            selectedItemTextView.setText(title);
+//        }
+
+        if (android.os.Build.VERSION.SDK_INT >= 33) {
+            bookInfo = getIntent().getSerializableExtra("BOOK_INFO", BookInfo.class);
+        } else {
+            bookInfo = (BookInfo) getIntent().getSerializableExtra("BOOK_INFO");
+        }
+
+        if (bookInfo != null) {
+            selectedItemTextView.setText(bookInfo.getTitle());
+        } else if (title != null) {
+            selectedItemTextView.setText(title);
+        }
+
     }
 }
