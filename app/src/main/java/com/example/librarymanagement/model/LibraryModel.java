@@ -5,10 +5,10 @@ public class LibraryModel {
     private int studentNum;
     private int contactNum;
     private String selectedBooks;
-    private int borrowingDate;
-    private int returnDate;
+    private String borrowingDate;
+    private String returnDate;
 
-    public LibraryModel(String name, int studentNum, int contactNum, String selectedBooks, int borrowingDate, int returnDate) {
+    public LibraryModel(String name, int studentNum, int contactNum, String selectedBooks, String borrowingDate, String returnDate) {
         this.name = name;
         this.studentNum = studentNum;
         this.contactNum = contactNum;
@@ -44,16 +44,16 @@ public class LibraryModel {
     public void setSelectedBooks() {
         this.selectedBooks = selectedBooks;
     }
-    public int getBorrowingDate() {
+    public String getBorrowingDate() {
         return borrowingDate;
         }
-    public void setBorrowingDate(int borrowingDate) {
+    public void setBorrowingDate(String borrowingDate) {
         this.borrowingDate = borrowingDate;
     }
-    public int getReturnDate() {
+    public String getReturnDate() {
         return returnDate;
         }
-    public void setReturnDate(int returnDate) {
+    public void setReturnDate(String returnDate) {
         this.returnDate = returnDate;
     }
 }

@@ -17,8 +17,8 @@ public class LibraryTable {
                     + COLUMN_STUDENT_NUMBER + " INTEGER,"
                     + COLUMN_CONTACT_NUMBER + " INTEGER,"
                     + COLUMN_SELECTED_BOOKS + " TEXT,"
-                    + COLUMN_BORROWING_DATE + " INTEGER,"
-                    + COLUMN_RETURN_DATE + " INTEGER"
+                    + COLUMN_BORROWING_DATE + " TEXT,"
+                    + COLUMN_RETURN_DATE + " TEXT"
                     + ") ";
 
 }
