@@ -1,17 +1,37 @@
 package com.example.librarymanagement.model;
 
-public class global {
+import java.io.Serializable;
+import java.util.ArrayList;
 
-    public static String book;
-    public static String book1;
-    public static String book2;
-    public static String book3;
+public class global implements Serializable {
 
-    public static String author;
-    public static String author1;
-    public static String author2;
-    public static String author3;
-    public static String category;
-    public static String description;
+    private String title;
+    private String author;
+    private String description;
+    private String category;
+
+    public global(String title, String author, String description, String category) {
+
+        this.title = title;
+        this.author = author;
+        this.description = description;
+        this.category = category;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getCategory() {
+        return category;
+    }
 
 }

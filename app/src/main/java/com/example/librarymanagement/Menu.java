@@ -2,7 +2,6 @@ package com.example.librarymanagement;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -10,6 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.librarymanagement.model.global;
+
+import java.util.ArrayList;
 
 public class Menu extends AppCompatActivity {
 
@@ -34,7 +37,7 @@ public class Menu extends AppCompatActivity {
         });
 
         cateBtn.setOnClickListener( v -> {
-            Intent intent = new Intent(this, Category.class);
+            Intent intent = new Intent(Menu.this, Category.class);
             startActivity(intent);
         });
 

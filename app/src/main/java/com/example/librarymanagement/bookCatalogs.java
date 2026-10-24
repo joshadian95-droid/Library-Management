@@ -17,6 +17,8 @@ import com.google.android.material.card.MaterialCardView;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 public class bookCatalogs extends AppCompatActivity {
 
     @Override
@@ -25,117 +27,93 @@ public class bookCatalogs extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_book_catalogs);
 
-          String category = global.category;
-          String title = global.book;
-          String title1 = global.book1;
-          String title2 = global.book2;
-          String title3 = global.book3;
-          String author = global.author;
-          String author1 = global.author1;
-          String author2 = global.author2;
-          String author3 = global.author3;
+        ArrayList<global> books = (ArrayList<global>) getIntent().getSerializableExtra("books");
 
-//        String book = getIntent().getStringExtra("book");
-//        String book1 = getIntent().getStringExtra("book1");
-//        String book2 = getIntent().getStringExtra("book2");
-//        String book3 = getIntent().getStringExtra("book3");
+        ((TextView) findViewById(R.id.title)).setText(books.get(0).getTitle()); //Use this to get the value of the title in the arraylist
+        ((TextView) findViewById(R.id.title1)).setText(books.get(1).getTitle());
+        ((TextView) findViewById(R.id.title2)).setText(books.get(2).getTitle());
+        ((TextView) findViewById(R.id.title3)).setText(books.get(3).getTitle());
 
-        TextView text = findViewById(R.id.title);
-        text.setText(global.book);
         MaterialCardView btnBook = findViewById(R.id.book);
 
         btnBook.setOnClickListener(v -> {
             AlertDialog.Builder builder =new AlertDialog.Builder(this);
             View popUpView =getLayoutInflater().inflate(R.layout.bookpopup, null);
 
-            ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(title);
-            ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(author);
-            ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(category);
+            ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(books.get(0).getTitle());
+            ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(books.get(0).getAuthor());
+            ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(books.get(0).getCategory());
             builder.setView(popUpView);
 
             AlertDialog dialog = builder.create();
-            bookCred(btnBook, author, title, "", category);
             dialog.show();
 
             Button butonton = popUpView.findViewById(R.id.borrowBtn);
             butonton.setOnClickListener(view -> {
                 Intent intent = new Intent(this, Form.class);
-                intent.putExtra("title", global.book);
                 startActivity(intent);
             });
         });
 
-        TextView text1 = findViewById(R.id.title1);
-        text1.setText(global.book1);
         MaterialCardView btnBook1 = findViewById(R.id.book1);
 
         btnBook1.setOnClickListener(v -> {
             AlertDialog.Builder builder =new AlertDialog.Builder(this);
             View popUpView =getLayoutInflater().inflate(R.layout.bookpopup, null);
 
-            ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(title1);
-            ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(author1);
-            ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(category);
+            ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(books.get(1).getTitle());
+            ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(books.get(1).getAuthor());
+            ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(books.get(0).getCategory());
             builder.setView(popUpView);
 
             AlertDialog dialog = builder.create();
-            bookCred(btnBook1, author1, title1, "", category);
             dialog.show();
 
             Button butonton = popUpView.findViewById(R.id.borrowBtn);
             butonton.setOnClickListener(view -> {
                 Intent intent = new Intent(this, Form.class);
-                intent.putExtra("title", global.book);
                 startActivity(intent);
             });
         });
 
-        TextView text2 = findViewById(R.id.title2);
-        text2.setText(global.book2);
         MaterialCardView btnBook2 = findViewById(R.id.book2);
 
         btnBook2.setOnClickListener(v -> {
             AlertDialog.Builder builder =new AlertDialog.Builder(this);
             View popUpView =getLayoutInflater().inflate(R.layout.bookpopup, null);
 
-            ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(title2);
-            ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(author2);
-            ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(category);
+            ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(books.get(2).getTitle());
+            ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(books.get(2).getAuthor());
+            ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(books.get(0).getCategory());
             builder.setView(popUpView);
 
             AlertDialog dialog = builder.create();
-            bookCred(btnBook2, author2, title2, "", category);
             dialog.show();
 
             Button butonton = popUpView.findViewById(R.id.borrowBtn);
             butonton.setOnClickListener(view -> {
                 Intent intent = new Intent(this, Form.class);
-                intent.putExtra("title", global.book);
                 startActivity(intent);
             });
         });
 
-        TextView text3 = findViewById(R.id.title3);
-        text3.setText(global.book3);
         MaterialCardView btnBook3 = findViewById(R.id.book3);
 
         btnBook3.setOnClickListener(v -> {
             AlertDialog.Builder builder =new AlertDialog.Builder(this);
             View popUpView =getLayoutInflater().inflate(R.layout.bookpopup, null);
 
-            ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(title3);
-            ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(author3);
-            ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(category);
+            ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(books.get(3).getTitle());
+            ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(books.get(3).getAuthor());
+            ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(books.get(0).getCategory());
             builder.setView(popUpView);
 
             AlertDialog dialog = builder.create();
-            bookCred(btnBook3, author3, title3, "", category);
             dialog.show();
 
             Button butonton = popUpView.findViewById(R.id.borrowBtn);
             butonton.setOnClickListener(view -> {
                 Intent intent = new Intent(this, Form.class);
-                intent.putExtra("title", global.book);
                 startActivity(intent);
             });
         });
@@ -147,11 +125,4 @@ public class bookCatalogs extends AppCompatActivity {
         });
     }
 
-    private void bookCred (View cardView, String Author, String title, String description, String category){
-        global.book = title;
-        global.author = Author;
-        global.description = description;
-        global.category = category;
-
-    }
 }
