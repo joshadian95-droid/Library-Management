@@ -27,10 +27,10 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card"
-            android:layout_width="310dp"
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
             android:layout_marginTop="170dp"
             android:backgroundTint="@color/white"
             android:clickable="false"
@@ -42,7 +42,7 @@
 
             <Button
                 android:id="@+id/catalogBtn"
-                android:layout_width="230dp"
+                android:layout_width="210dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
@@ -56,7 +56,7 @@
 
             <Button
                 android:id="@+id/categoryBtn"
-                android:layout_width="230dp"
+                android:layout_width="210dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="120dp"
