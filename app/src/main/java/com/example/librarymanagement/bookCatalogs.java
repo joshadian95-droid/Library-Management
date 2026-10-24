@@ -3,6 +3,7 @@ package com.example.librarymanagement;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View;
 import androidx.activity.EdgeToEdge;
@@ -43,6 +44,7 @@ public class bookCatalogs extends AppCompatActivity {
             ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(books.get(0).getTitle());
             ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(books.get(0).getAuthor());
             ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(books.get(0).getCategory());
+            ((ImageView) popUpView.findViewById(R.id.cover)).setImageResource(books.get(0).getCover());
             builder.setView(popUpView);
 
             AlertDialog dialog = builder.create();
@@ -64,6 +66,7 @@ public class bookCatalogs extends AppCompatActivity {
             ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(books.get(1).getTitle());
             ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(books.get(1).getAuthor());
             ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(books.get(0).getCategory());
+            ((ImageView) popUpView.findViewById(R.id.cover)).setImageResource(books.get(1).getCover());
             builder.setView(popUpView);
 
             AlertDialog dialog = builder.create();
@@ -85,6 +88,7 @@ public class bookCatalogs extends AppCompatActivity {
             ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(books.get(2).getTitle());
             ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(books.get(2).getAuthor());
             ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(books.get(0).getCategory());
+            ((ImageView) popUpView.findViewById(R.id.cover)).setImageResource(books.get(2).getCover());
             builder.setView(popUpView);
 
             AlertDialog dialog = builder.create();
@@ -106,6 +110,7 @@ public class bookCatalogs extends AppCompatActivity {
             ((TextView) popUpView.findViewById(R.id.TitleSet)).setText(books.get(3).getTitle());
             ((TextView) popUpView.findViewById(R.id.AuthorSet)).setText(books.get(3).getAuthor());
             ((TextView) popUpView.findViewById(R.id.CategorySet)).setText(books.get(0).getCategory());
+            ((ImageView) popUpView.findViewById(R.id.cover)).setImageResource(books.get(3).getCover());
             builder.setView(popUpView);
 
             AlertDialog dialog = builder.create();

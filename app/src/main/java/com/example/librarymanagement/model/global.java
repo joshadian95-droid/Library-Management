@@ -9,13 +9,15 @@ public class global implements Serializable {
     private String author;
     private String description;
     private String category;
+    private int cover;
 
-    public global(String title, String author, String description, String category) {
+    public global(String title, String author, String description, String category, int cover) {
 
         this.title = title;
         this.author = author;
         this.description = description;
         this.category = category;
+        this.cover = cover;
     }
 
     public String getTitle() {
@@ -33,5 +35,7 @@ public class global implements Serializable {
     public String getCategory() {
         return category;
     }
+
+    public int getCover(){return cover;}
 
 }
