@@ -5,22 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fffdf0"
+
     tools:context=".Form">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:background="@drawable/formbackground"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/BorrowForm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:text="Borrowing Form"
             android:textSize="22sp"
             android:textColor="@color/black"
+            android:textStyle="bold"
             android:layout_marginLeft="120dp"/>
 
         <TextView
@@ -46,6 +48,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
 
             android:orientation="vertical">
 
@@ -67,9 +70,8 @@
             android:layout_height="48dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-            android:hint="  ex: Juan Dela Cruz"
+            android:hint="ex: Juan Dela Cruz"
             android:textColor="@color/black"
-            android:background="@drawable/inputborder"
             android:ems="10"
             android:inputType="text" />
 
@@ -177,15 +179,11 @@
                     android:id="@+id/returnlbl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:text="Return Date:"
                     android:textColor="@color/black"/>
 
-                <EditText
-                    android:id="@+id/inputReturnDate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="date" />
+
 
             </LinearLayout>
         </LinearLayout>

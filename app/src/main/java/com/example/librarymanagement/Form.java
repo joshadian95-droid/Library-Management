@@ -37,21 +37,46 @@ public class Form extends AppCompatActivity {
             return insets;
         });
 
-
-
-        if (android.os.Build.VERSION.SDK_INT >= 33) {
-            bookInfo = getIntent().getSerializableExtra(
-                    "BOOK_INFO", BookInfo.class);
-        } else {
-            bookInfo = (BookInfo) getIntent()
-                    .getSerializableExtra("BOOK_INFO");
-        }
         nameEditText = findViewById(R.id.inputName);
         studentNum = findViewById(R.id.inputStudentNo);
         contactNum = findViewById(R.id.inputContactNo);
         borrowingDate = findViewById(R.id.inputborrowDate);
         returnDate = findViewById(R.id.inputReturnDate);
         selectedItemTextView = findViewById(R.id.selectedBook);
+<<<<<<< HEAD
+//        selectedItemTextView.setText(bookInfo.getTitle());
+
+        String title = getIntent().getStringExtra("title");
+
+//        if (android.os.Build.VERSION.SDK_INT >= 33) {
+//            bookInfo = getIntent().getSerializableExtra(
+//                    "BOOK_INFO", BookInfo.class);
+//        } else {
+//            bookInfo = (BookInfo) getIntent()
+//                    .getSerializableExtra("BOOK_INFO");
+//        }
+//
+//        if (bookInfo != null){
+//            selectedItemTextView.setText(bookInfo.getTitle());
+//        }
+//
+//        else {
+//            selectedItemTextView.setText(title);
+//        }
+
+        if (android.os.Build.VERSION.SDK_INT >= 33) {
+            bookInfo = getIntent().getSerializableExtra("BOOK_INFO", BookInfo.class);
+        } else {
+            bookInfo = (BookInfo) getIntent().getSerializableExtra("BOOK_INFO");
+        }
+
+        if (bookInfo != null) {
+            selectedItemTextView.setText(bookInfo.getTitle());
+        } else if (title != null) {
+            selectedItemTextView.setText(title);
+        }
+
+=======
         selectedItemTextView.setText(bookInfo.getTitle());
         confirmBtn = findViewById(R.id.confirmBtn);
         borrowInfoRepository = new BorrowInfoRepository(this);
@@ -107,4 +132,36 @@ public class Form extends AppCompatActivity {
         });
     }
 
+<<<<<<< HEAD
+=======
+        List<LibraryModel> library = borrowInfoRepository.getLibraryModel();
+
+        StringBuilder result = new StringBuilder();
+
+        for (LibraryModel library : library) {
+
+            result.append("Name: ")
+                    .append(library.getName())
+                    .append("\n");
+
+            result.append("Student Number: ")
+                    .append(library.getStudentNum())
+                    .append("\n");
+
+            result.append("Contact Number: ")
+                    .append(library.getContactNum())
+                    .append("\n");
+
+
+            result.append("Borrow Date: ")
+                    .append(library.getBorrowingDate())
+                    .append("\n");
+
+            result.append("Return Date: ")
+                    .append(library.getReturnDate())
+                    .append("\n");
+        }
+>>>>>>> 1e05f9d066d661713210bbfd4c27a615d88d12fc
+    }
+>>>>>>> aec2ab72009fdb231d2e59d12eddf33970bd4066
 }

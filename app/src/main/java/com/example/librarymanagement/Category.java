@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,10 +23,10 @@ public class Category extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_category);
 
-        bookCategory(findViewById(R.id.ctBtn), "Android Programming Basics", "Michael Torres", "Introduction to Databases", "Robert Santos", "Java Programming Fundamentals", "Daniel Cruz", "Web Development Essentials", "Kevin Reyes", "Computer & Technology");
-        bookCategory(findViewById(R.id.mathBtn), "College Algebra", "Marica Garcia", "Discrete Mathematics", "Anthony Kim", "Fundamentals of Statistics", "Patricia Lopez", "Introduction to Calculus", "John Mendoza","Mathematics");
-        bookCategory(findViewById(R.id.sciBtn), "Basic Physics", "Richard Flores", "Environmental Science", "Angela Ramos", "General Biology", "Michelle Tan", "General Chemistry", "Christopher Lee", "Science");
-        bookCategory(findViewById(R.id.litBtn), "Introduction to Philippine Literature", "Elena Castillo", "Philippine Short Stories", "Ramon Villanueva", "World Literature", "Sophia Hernandez", "Writing and Literature", "Mark Gonzales","Literature");
+        bookCategory(findViewById(R.id.ctBtn), R.drawable.android_programming_basics,"Android Programming Basics", "Michael Torres", R.drawable.introduction_to_databases, "Introduction to Databases", "Robert Santos", R.drawable.java_programming_fundamentals,"Java Programming Fundamentals", "Daniel Cruz", R.drawable.web_development_essentials,"Web Development Essentials", "Kevin Reyes", "Computer & Technology");
+        bookCategory(findViewById(R.id.mathBtn), R.drawable.college_algebra, "College Algebra", "Marica Garcia", R.drawable.discrete_mathematics,"Discrete Mathematics", "Anthony Kim", R.drawable.fundamentals_of_statistics,"Fundamentals of Statistics", "Patricia Lopez", R.drawable.introduction_to_calculus,"Introduction to Calculus", "John Mendoza","Mathematics");
+        bookCategory(findViewById(R.id.sciBtn), R.drawable.basic_of_physics,"Basic Physics", "Richard Flores", R.drawable.environmental_science,"Environmental Science", "Angela Ramos", R.drawable.general_biology,"General Biology", "Michelle Tan", R.drawable.general_chemistry,"General Chemistry", "Christopher Lee", "Science");
+        bookCategory(findViewById(R.id.litBtn), R.drawable.introduction_to_philippine_literature,"Introduction to Philippine Literature", "Elena Castillo", R.drawable.philippine_short_stories,"Philippine Short Stories", "Ramon Villanueva", R.drawable.world_literature,"World Literature", "Sophia Hernandez", R.drawable.writing_and_literature,"Writing and Literature", "Mark Gonzales","Literature");
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -34,7 +35,7 @@ public class Category extends AppCompatActivity {
         });
     }
 
-    private void bookCategory (View button, String book, String Author,String book1, String Author1, String book2, String Author2, String book3, String Author3, String category) { //View Button fixed the of Button button in xml and the keep crashing shit. Using View instead of MaterialViewCard is much better.
+    private void bookCategory (View button, int bookCover, String book, String Author, int bookCover1, String book1, String Author1, int bookCover2, String book2, String Author2, int bookCover3, String book3, String Author3, String category) { //View Button fixed the of Button button in xml and the keep crashing shit. Using View instead of MaterialViewCard is much better.
         button.setOnClickListener( v -> {
             Intent intent = new Intent(Category.this, bookCatalogs.class);
             global.book = book;
@@ -46,6 +47,10 @@ public class Category extends AppCompatActivity {
             global.author2 = Author2;
             global.author3 = Author3;
             global.category = category;
+            global.bookCover = bookCover;
+            global.bookCover1 = bookCover1;
+            global.bookCover2= bookCover2;
+            global.bookCover3 = bookCover3;
             startActivity(intent);
         });
     }

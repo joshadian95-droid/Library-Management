@@ -1,5 +1,7 @@
 package com.example.librarymanagement.model;
 
+import android.widget.ImageView;
+
 public class global {
 
     public static String book;
@@ -14,4 +16,9 @@ public class global {
     public static String category;
     public static String description;
 
+    public static int bookCover;
+
+    public static int bookCover1;
+    public static int bookCover2;
+    public static int bookCover3;
 }
