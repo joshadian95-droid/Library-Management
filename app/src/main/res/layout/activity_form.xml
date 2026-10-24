@@ -67,8 +67,9 @@
             android:layout_height="48dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-            android:hint="ex: Juan Dela Cruz"
+            android:hint="  ex: Juan Dela Cruz"
             android:textColor="@color/black"
+            android:background="@drawable/inputborder"
             android:ems="10"
             android:inputType="text" />
 
@@ -89,7 +90,8 @@
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:textColor="@color/black"
-            android:hint="ex: 02000123456"
+            android:hint="  ex: 02000123456"
+            android:background="@drawable/inputborder"
             android:ems="10"
             android:inputType="number" />
 
@@ -110,7 +112,8 @@
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:textColor="@color/black"
-            android:hint="ex: 09123456789"
+            android:hint="  ex: 09123456789"
+            android:background="@drawable/inputborder"
             android:ems="10"
             android:inputType="number|phone" />
 
@@ -177,16 +180,12 @@
                     android:text="Return Date:"
                     android:textColor="@color/black"/>
 
-                <Button
-                    android:id="@+id/chooseReturnDate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:backgroundTint="@color/white"
-                    android:textColor="@color/black"
-                    app:strokeColor="@color/black"
-                    app:strokeWidth="0.5dp"
-                    app:cornerRadius="5dp"
-                    android:text="Pick a date" />
+                <EditText
+                    android:id="@+id/inputReturnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date" />
 
             </LinearLayout>
         </LinearLayout>

@@ -50,8 +50,10 @@ public class Form extends AppCompatActivity {
         studentNum = findViewById(R.id.inputStudentNo);
         contactNum = findViewById(R.id.inputContactNo);
         borrowingDate = findViewById(R.id.inputborrowDate);
+        returnDate = findViewById(R.id.inputReturnDate);
         selectedItemTextView = findViewById(R.id.selectedBook);
         selectedItemTextView.setText(bookInfo.getTitle());
+        confirmBtn = findViewById(R.id.confirmBtn);
         borrowInfoRepository = new BorrowInfoRepository(this);
 
         confirmBtn.setOnClickListener(v -> {
@@ -104,34 +106,5 @@ public class Form extends AppCompatActivity {
             }
         });
     }
-    private void displayInfo(){
 
-        List<LibraryModel> library = borrowInfoRepository.getLibraryModel();
-
-        StringBuilder result = new StringBuilder();
-
-        for (LibraryModel library : library) {
-
-            result.append("Name: ")
-                    .append(library.getName())
-                    .append("\n");
-
-            result.append("Student Number: ")
-                    .append(library.getStudentNum())
-                    .append("\n");
-
-            result.append("Contact Number: ")
-                    .append(library.getContactNum())
-                    .append("\n");
-
-
-            result.append("Borrow Date: ")
-                    .append(library.getBorrowingDate())
-                    .append("\n");
-
-            result.append("Return Date: ")
-                    .append(library.getReturnDate())
-                    .append("\n");
-        }
-    }
 }

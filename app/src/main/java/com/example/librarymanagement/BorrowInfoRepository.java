@@ -29,11 +29,11 @@ public class BorrowInfoRepository {
         values.put(LibraryTable.COLUMN_BORROWING_DATE, library.getBorrowingDate());
         values.put(LibraryTable.COLUMN_RETURN_DATE, library.getReturnDate());
 
-        long newRowId = db.insert(LibraryTable.TABLE_NAME, null, values);
-        return newRowId != -1;
+        long result = db.insert(LibraryTable.TABLE_NAME, null, values);
+        return result != -1;
     }
 
-    public List<LibraryModel> getLibraryModel() {
+    public List<LibraryModel> getLibrary() {
 
         List<LibraryModel> libraryInfo = new ArrayList<>();
 
